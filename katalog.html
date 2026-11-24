@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Katalog Produk — ZAURA CLOTH | Sablon, Jersey, Hoodie, Polo, Topi</title>
+  <meta name="description" content="Katalog lengkap ZAURA CLOTH: kaos polos, kaos sablon, jersey custom, hoodie, polo, kemeja kerja, topi custom, dan lanyard. Cari dan filter produk sesuai kebutuhan.">
+  <meta name="theme-color" content="#111111">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Geist:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="catalog">
+  <div id="chrome-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="bg-word" aria-hidden="true">KATALOG</div>
+      <div class="container">
+        <span class="eyebrow">Katalog Produk</span>
+        <h1>Explore the collection.</h1>
+        <p class="lead">Temukan pilihan apparel dan produk custom dari ZAURA CLOTH. Cari, filter, lalu konsultasikan langsung lewat WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:clamp(48px,6vw,80px)">
+      <div class="container">
+        <div class="toolbar">
+          <div class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            <label class="sr-only" for="search">Cari produk</label>
+            <input id="search" type="search" placeholder="Cari kaos, jersey, hoodie, topi…" autocomplete="off">
+          </div>
+          <div class="chips" id="catChips" role="group" aria-label="Filter kategori"></div>
+          <div class="filter-row">
+            <label class="sr-only" for="sortSel">Urutkan</label>
+            <select id="sortSel" aria-label="Urutkan produk">
+              <option value="default">Urutan rekomendasi</option>
+              <option value="name">Nama A–Z</option>
+              <option value="cat">Kategori</option>
+            </select>
+            <label class="sr-only" for="colorSel">Filter warna</label>
+            <select id="colorSel" aria-label="Filter warna"></select>
+            <button class="chip" type="button" id="resetAll">Reset filter</button>
+          </div>
+          <p class="result-count" id="resultCount" aria-live="polite"></p>
+        </div>
+
+        <div class="catalog-grid" id="productGrid"></div>
+
+        <div class="center mt-lg reveal">
+          <p class="lead" style="margin-bottom:22px">Tidak menemukan yang Anda cari? Kami juga menerima desain custom sesuai kebutuhan Anda.</p>
+          <div class="btn-row">
+            <a class="btn btn-dark" data-fill="wa" href="#" target="_blank" rel="noopener">Konsultasi Desain Custom</a>
+            <a class="btn btn-ghost" href="panduan-ukuran.html">Panduan Ukuran</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="chrome-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

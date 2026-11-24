@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Custom Order — ZAURA CLOTH | Konsultasi Desain Kaos, Jersey & Seragam</title>
+  <meta name="description" content="Pesan kaos sablon, jersey custom, hoodie custom, topi, kemeja kerja, dan lanyard. Isi form konsultasi lalu lanjutkan via WhatsApp.">
+  <meta name="theme-color" content="#111111">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Geist:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="custom">
+  <div id="chrome-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="bg-word" aria-hidden="true">CUSTOM</div>
+      <div class="container">
+        <span class="eyebrow">Custom Order</span>
+        <h1>Your idea. Your design. Your apparel.</h1>
+        <p class="lead">Wujudkan kebutuhan pakaian custom bersama ZAURA CLOTH. Ceritakan kebutuhan Anda, lalu kami bantu dari desain sampai pesanan siap.</p>
+      </div>
+    </section>
+
+    <section class="section dark" style="padding-top:clamp(64px,8vw,110px)">
+      <div class="container" style="display:grid;gap:44px;justify-items:center;text-align:center">
+        <div class="types reveal" aria-label="Jenis produk custom">
+          <span>Sablon kaos</span><span>Jersey custom</span><span>Kaos komunitas</span><span>Hoodie custom</span><span>Topi custom</span><span>Kemeja kerja</span><span>Lanyard</span>
+        </div>
+        <div class="steps reveal">
+          <div class="step"><span class="n">LANGKAH 01</span><h3>Ceritakan kebutuhan</h3><p>Isi jenis produk, jumlah, dan ukuran di form, atau langsung chat via WhatsApp.</p></div>
+          <div class="step"><span class="n">LANGKAH 02</span><h3>Konfirmasi desain</h3><p>Kami bantu menyesuaikan desain, bahan, dan warna sebelum pesanan dimulai.</p></div>
+          <div class="step"><span class="n">LANGKAH 03</span><h3>Pesan &amp; produksi</h3><p>Pesan satuan maupun partai. Detail harga dikonfirmasi sesuai jumlah pesanan.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white-bg">
+      <div class="container" style="display:grid;gap:36px;justify-items:center;text-align:center">
+        <div class="section-head reveal" style="margin-bottom:0">
+          <span class="eyebrow">Bahan &amp; Harga Sablon</span>
+          <h2>Pilihan bahan sablon</h2>
+          <p class="lead">Harga sablon berjenjang menurut bahan, ukuran cetak, dan jumlah pesanan.</p>
+        </div>
+        <div id="sablonBox" class="reveal" style="display:grid;gap:22px;justify-items:center;width:100%">
+          <div class="bahan-grid">
+            <div class="reason" style="padding:26px 20px"><h3>Combed 24s</h3><p>Kaos combed 24s dengan hasil sablon tegas.</p></div>
+            <div class="reason" style="padding:26px 20px"><h3>Soft PE</h3><p>Pilihan bahan soft PE untuk sablon kaos.</p></div>
+            <div class="reason" style="padding:26px 20px"><h3>Combed 30s</h3><p>Kaos combed 30s dengan bahan lebih halus.</p></div>
+          </div>
+          <p class="lead" style="font-size:15px">Jumlah pesanan: 1–12, 13–24, 25–50, dan 51–100 pcs. Ukuran cetak: 10 × 10 cm, 25 × 5 cm, 25 × 10 cm, A5, A4, dan A3.</p>
+          <div class="btn-row"><a class="btn btn-dark" data-fill="wa" href="#" target="_blank" rel="noopener">Tanya Harga Sablon</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="display:grid;gap:36px;justify-items:center;text-align:center">
+        <div class="section-head reveal" style="margin-bottom:0">
+          <span class="eyebrow">Form Konsultasi</span>
+          <h2>Ceritakan pesanan Anda</h2>
+          <p class="lead">Isi data di bawah ini. Pesan akan disusun otomatis di WhatsApp dan Anda tinggal menekan kirim.</p>
+        </div>
+
+        <form class="form-card reveal" id="orderForm" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="nama">Nama pelanggan *</label>
+              <input id="nama" name="nama" type="text" autocomplete="name" placeholder="Nama lengkap" required>
+            </div>
+            <div class="field">
+              <label for="jenis">Jenis produk *</label>
+              <select id="jenis" name="jenis" required></select>
+            </div>
+            <div class="field full">
+              <span style="font-size:13px;font-weight:700">Pemesanan</span>
+              <div class="radio-row" role="radiogroup" aria-label="Pilih satuan atau partai">
+                <label><input type="radio" name="mode" value="Satuan" checked> Satuan</label>
+                <label><input type="radio" name="mode" value="Partai"> Partai</label>
+              </div>
+            </div>
+            <div class="field">
+              <label for="jumlah">Jumlah pesanan</label>
+              <input id="jumlah" name="jumlah" type="number" min="1" inputmode="numeric" placeholder="Contoh: 24">
+            </div>
+            <div class="field">
+              <label for="ukuran">Ukuran</label>
+              <input id="ukuran" name="ukuran" type="text" placeholder="Contoh: S 5, M 10, L 8">
+              <small>Isi per ukuran jika sudah tahu jumlahnya.</small>
+            </div>
+            <div class="field">
+              <label for="warna">Warna</label>
+              <input id="warna" name="warna" type="text" placeholder="Contoh: Navy, Putih">
+            </div>
+            <div class="field">
+              <label for="desain">Kebutuhan desain</label>
+              <input id="desain" name="desain" type="text" placeholder="Contoh: sablon depan belakang, logo dada">
+            </div>
+            <div class="field full">
+              <label for="catatan">Catatan tambahan</label>
+              <textarea id="catatan" name="catatan" placeholder="Tulis tanggal butuh, bahan yang diinginkan, atau hal lain yang perlu kami tahu."></textarea>
+            </div>
+            <div class="field full">
+              <div class="upload">
+                <label for="refFile" style="font-weight:700">Referensi desain (opsional)</label>
+                <input id="refFile" type="file" accept="image/*" multiple>
+                <small>Preview ditampilkan di browser saja. Lampirkan file langsung di chat WhatsApp setelah pesan terkirim.</small>
+                <div class="upload-preview" id="refPreview"></div>
+              </div>
+            </div>
+          </div>
+          <div class="form-foot">
+            <button class="btn btn-dark magnetic" type="submit">Kirim Konsultasi via WhatsApp <span class="arrow">→</span></button>
+            <small id="formMsg" aria-live="polite"></small>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="chrome-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
