@@ -775,3 +775,36 @@ p { margin: 0 0 1em; }
 .form-card { min-width: 0; }
 .dark .story-captions .cap-item p, .story .story-captions .cap-item p { color: #cfcfca; }
 .rating-hero .stars { margin-top: 14px; }
+
+/* ===== v2: tombol menu lebih kecil & menu mobile rapi ===== */
+.menu-btn {
+  width: 40px; height: 40px; border: 0; background: rgba(255,255,255,.1);
+}
+.menu-btn span { left: 12px; right: 12px; height: 1.5px; border-radius: 2px; }
+.menu-btn span:nth-child(1) { top: 14px; }
+.menu-btn span:nth-child(2) { top: 19px; }
+.menu-btn span:nth-child(3) { top: 24px; }
+.menu-btn[aria-expanded="true"] span:nth-child(1) { top: 19px; }
+.menu-btn[aria-expanded="true"] span:nth-child(3) { top: 19px; }
+
+.mobile-menu {
+  justify-content: flex-start; gap: 14px; overflow-y: auto;
+  padding: calc(var(--header-h) + 48px) 24px calc(40px + env(safe-area-inset-bottom, 0px));
+}
+.mobile-menu a.mm-link { font-size: clamp(26px, 7.6vw, 38px); line-height: 1.1; }
+.mobile-menu .social-row { margin-top: 18px; gap: 10px; }
+.mobile-menu .social-link { width: 42px; height: 42px; }
+
+/* Ikon sosial di header desktop (samakan dengan versi HP) */
+.header-social { display: none; }
+@media (min-width: 1280px) {
+  .header-social { display: flex; align-items: center; gap: 6px; }
+}
+.header-icons { gap: 6px; flex-wrap: nowrap; }
+.header-icons .social-link { width: 34px; height: 34px; border-color: var(--line-dark); background: transparent; }
+.header-icons .social-link img { width: 16px; height: 16px; filter: invert(1); }
+.header-icons .social-link:hover { background: var(--white); border-color: var(--white); }
+.header-icons .social-link:hover img { filter: none; }
+@media (max-width: 720px) {
+  .mobile-menu { padding-top: calc(var(--header-h) + 36px); }
+}

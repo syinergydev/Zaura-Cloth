@@ -89,6 +89,7 @@
       '<header class="site-header" id="siteHeader">' +
         '<a href="index.html" class="brand" aria-label="ZAURA CLOTH — Beranda"><img src="assets/img/logo-white.png" alt="ZAURA CLOTH" width="150" height="30"></a>' +
         '<nav aria-label="Navigasi utama"><ul class="nav-links">' + links + "</ul></nav>" +
+        '<div class="header-social">' + socialRow("header-icons") + "</div>" +
         '<div class="nav-cta">' +
           '<a class="btn btn-lime btn-sm btn-desk magnetic" href="' + esc(waUrl("Halo ZAURA CLOTH, saya ingin memesan.")) + '" target="_blank" rel="noopener">Pesan Sekarang</a>' +
           '<button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Buka menu"><span></span><span></span><span></span></button>' +
